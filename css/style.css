@@ -64,7 +64,6 @@ h2{
 
 .project{
     border: 1px solid #e6e6e6;
-    ; 
     border-radius: 10px;
     margin-bottom: 15px;
     /* margin: 10px; */
@@ -75,7 +74,6 @@ h2{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .project__course,
@@ -107,12 +105,19 @@ h2{
 }
 
 .project__details{
-    width: 500px;
+    width: 50%;
+
     /* display: flex; */
 
 }
 .project__imageContainer{
-    width: 500px;
+    width: 50%;
+}
+
+.project__imageContainer img{
+    max-width: 100%;
+
+
 }
 
 
@@ -333,12 +338,55 @@ figure{
     .header .logo {
         text-align: center;
     }
+    .project {
+        display: block;
+    }
+    .project__imageContainer {
+        width: auto;
+        text-align: center;
+    }
+
+    .project__details{
+        width: auto;
+        /* font-size: 16px; */
+    }
+
+    .project__course, .project__date, .project__url {
+        margin: .3em 0;
+        
+    }
+    .project__title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+        
+    }
+    .project__url{
+        
+        font-size: 1em;
+    }
+    .project__course{
+        
+        font-size: .7em;
+    }
+    
+    .project__date{
+        font-size: .8em;
+        
+    }
+    
+    .project__description{
+        
+        font-size: 1em;
+    }
 
 }
 
 
 @media screen and (max-width: 480px){
-
+    .project__details{
+       
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 320px) {
