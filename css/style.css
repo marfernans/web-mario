@@ -317,6 +317,10 @@ figure{
 
 @media screen and (max-width: 1024px){
 
+    .container {
+        padding: 0 1em;
+    }
+
 }
 
 @media screen and (max-width: 767px){
@@ -399,6 +403,30 @@ figure{
     .project__details{
        
         font-size: 12px;
+
+    }
+    .contact {
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form__email button {
+
+        margin: 1em auto;
+        padding: 1.5em;
+
+    }
+
+    .form__email h3{
+        margin-top: 0;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
     }
 }
 
