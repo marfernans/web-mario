@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mario-Fedz</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=320=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -15,148 +16,144 @@
 <body>
 
     <header class="header">
-       
-        <div>
+        <div class="container">
+
             <figure class="logo">
-                <img src="images/logo.png" height="70px" alt="Logo Mario">
+                <img src="images/logo-mario.svg" height=" 50px" alt="Logo Mario">
             </figure>
+    
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#portafolio">Portafilio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#eventos">Experiencia</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#contacto">Tabajemos juntos</a>
+                    </li>
+                </ol>
+            </nav>
         </div>
-        <nav class="menu">
-            <ol>
-                <li>
-                    <a class="link" href="#portafolio">Portafilio</a>
-                </li>
-                <li>
-                    <a class="link" href="#eventos">Experiencia</a>
-                </li>
-                <li>
-                    <a class="link" href="#contacto">Tabajemos juntos</a>
-                </li>
-            </ol>
-        </nav>
     </header>
-    <section class="hero">
-        <h1>
-            Lorem ipsum dolor consectetur<br /> mollit necessitatibus
-            perspiciatis<br />omnis quisquamsaepe praesentium
-        </h1>
-        <!-- <img src="images/hero.jpg" width="600px" height="400px" alt="Portada"> -->
+    <!-- <section class="hero">
+        <div class="container">
+            <h1>
+                Lorem ipsum <strong>dolor consectetur</strong> <br /> <strong>mollit necessitatibus</strong>
+                perspiciatis<br />omnis quisquamsaepe <strong>praesentium quisquamsaepe</strong>
+            </h1>
+            <img  class="hero__image" src="images/hero.jpg" width="400px" alt="Portada">
+
+        </div>
     </section>
 
     <section id="portafolio" class="portfolio">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
+        <div class="container">
 
-            <div class="project__details">
-
-                <h3 class="project__title">Ptazi Video</h3>
-                <h6 class="project__course">React / UI-UX</h6>
-                <p class="project__date"><small> <strong>Fecha:</strong> 02/29/2017 </small></p>
-                <p class="project__url"><small> <strong>Puedes verlo:</strong> www.mario </small></p>
-                <p class="project__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In asperiores
-                    vero
-                    at quisquam optio architecto
-                </p>
-            </div>
-            <figure class="project__imageContainer">
-                <img class="project__image" width="200px"  src="images/bp.png" alt="image del proyecto bp">
-
-            </figure>
-        </article>
-        <article class="project">
-
-            <div class="project__details">
-
-                <h3 class="project__title">Ptazi Video</h3>
-                <h6 class="project__course">React / UI-UX</h6>
-                <p class="project__date"><small> <strong>Fecha:</strong> 02/29/2017 </small></p>
-                <p class="project__url"><small> <strong>Puedes verlo:</strong> www.mario </small></p>
-                <p class="project__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In asperiores
-                    vero
-                    at quisquam optio architecto
-                </p>
-            </div>
-            <figure class="project__imageContainer">
-                <img class="project__image" width="200px" src="images/bp.png" alt="image del proyecto bp">
-
-            </figure>
-        </article>
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
+    
+                <div class="project__details">
+    
+                    <h3 class="project__title"> App Climmx</h3>
+                    <h6 class="project__course">React / UI-UX</h6>
+                    <p class="project__date"><small> <strong>Fecha:</strong> 02/29/2017 </small></p>
+                    <p class="project__url"><small> <strong>Puedes verlo:</strong> www.mario </small></p>
+                    <p class="project__description">Una aplicación que mezcla la climatología con un diseño impecable, ofrece información en tiempo real del clima en todo el mundo. se te muestra una imagen relacionada con las condiciones actuales del lugar.</p>
+                </div>
+                <figure class="project__imageContainer">
+                    <img class="project__image" width="500px" src="images/project-1.jpg" alt="image del proyecto bp">
+    
+                </figure>
+            </article>
+          
+        </div>
     </section>
-    <h2 class="event__list__title">Ma sobre mi experiencia</h2>
-    <section id="eventos"  class="event__list" >
-        <article class="event">
-            <figure class="event__imageContainer">
-                <img class="event__image" src="images/evento-1.jpg" width="500px" alt="foto-evento">
-            </figure>
-            <div class="event__detail">
 
-                <h3 class="even__title">Platzi conf Mexico 2018</h3>
-                <p class="event__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quam, facere
-                    sunt ad ratione commodi
-                    dolores quos voluptatum expedita, ipsum praesentium fugiat odio magni ea doloremque, delectus quia
-                    temporibus cupiditate?</p>
-                <a class="event__url" href="#">Ver charla</a>
-            </div>
-        </article>
-        <article class="event">
-            <figure class="event__imageContainer">
-                <img class="event__image" src="images/evento-1.jpg" width="500px" alt="foto-evento">
-            </figure>
-            <div class="event__detail">
+    <div class="container">
 
-                <h3 class="even__title">Platzi conf Mexico 2018</h3>
-                <p class="event__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quam, facere
-                    sunt ad ratione commodi
-                    dolores quos voluptatum expedita, ipsum praesentium fugiat odio magni ea doloremque, delectus quia
-                    temporibus cupiditate?</p>
-                <a class="event__url" href="#">Ver charla</a>
-            </div>
-        </article>
-        <article class="event">
-            <figure class="event__imageContainer">
-                <img class="event__image" src="images/evento-1.jpg" width="500px" alt="foto-evento">
-            </figure>
-            <div class="event__detail">
+        <h2 class="event__list__title">Más sobre mi experiencia</h2>
+    </div>
+    <section id="eventos" class="event__list">
+        <div class="container">
+            <article class="event">
+                <figure class="event__imageContainer">
+                    <img class="event__image" src="images/evento-1.jpg" width="500px" alt="foto-evento">
+                </figure>
+                <div class="event__detail">
+                    <h3 class="even__title">Platzi conf Mexico 2018</h3>
+                    <p class="event__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="https://www.youtube.com/watch?v=AV7yPbW_7F0" class="event__url" target="_blank">Ver Charla</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event__imageContainer">
+                    <img class="event__image" src="images/evento-1.jpg" width="500px" alt="foto-evento">
+                </figure>
+                <div class="event__detail">
+    
+                    <h3 class="even__title">Platzi conf Mexico 2018</h3>
+                    <p class="event__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://www.youtube.com/watch?v=AV7yPbW_7F0" class="event__url" target="_blank">Ver charla</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event__imageContainer">
+                    <img class="event__image" src="images/evento-1.jpg" width="500px" alt="foto-evento">
+                </figure>
+                <div class="event__detail">
+    
+                    <h3 class="even__title">Platzi conf Mexico 2018</h3>
+                    <p class="event__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://www.youtube.com/watch?v=AV7yPbW_7F0" class="event__url" target="_blank">Ver charla</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event__imageContainer">
+                    <img class="event__image" src="images/evento-1.jpg" width="500px" alt="foto-evento">
+                </figure>
+                <div class="event__detail">
+    
+                    <h3 class="even__title">Platzi conf Mexico 2018</h3>
+                    <p class="event__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://www.youtube.com/watch?v=AV7yPbW_7F0" class="event__url" target="_blank">Ver charla</a>
+                </div>
+            </article>
 
-                <h3 class="even__title">Platzi conf Mexico 2018</h3>
-                <p class="event__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quam, facere
-                    sunt ad ratione commodi
-                    dolores quos voluptatum expedita, ipsum praesentium fugiat odio magni ea doloremque, delectus quia
-                    temporibus cupiditate?</p>
-                <a class="event__url" href="#">Ver charla</a>
-            </div>
-        </article>
-        <article class="event">
-            <figure class="event__imageContainer">
-                <img class="event__image" src="images/evento-1.jpg" width="500px" alt="foto-evento">
-            </figure>
-            <div class="event__detail">
-
-                <h3 class="even__title">Platzi conf Mexico 2018</h3>
-                <p class="event__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quam, facere
-                    sunt ad ratione commodi
-                    dolores quos voluptatum expedita, ipsum praesentium fugiat odio magni ea doloremque, delectus quia
-                    temporibus cupiditate?</p>
-                <a class="event__url" href="#">Ver charla</a>
-            </div>
-        </article>
+        </div>
     </section>
     <section id="contacto" class="contact">
-        <form action="/suscripcion/" class="form__email">
-            <h3>Creamos algo juntos</h3>
-            <input type="text" placeholder="Dejame tu email" id="email">
-            <button>Enviar</button>
-        </form>
+
+        <div class="container">
+            <form action="/suscripcion/" class="form__email">
+                <h3> ¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Dejame tu email" id="email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/ey_marius" class="social-link twitter" ></a>
+                <a href="https://twitter.com/ey_marius" class="social-link facebook" ></a>
+                <a href="https://twitter.com/ey_marius" class="social-link github" ></a>
+                <a href="https://twitter.com/ey_marius" class="social-link instagram" ></a>
+    
+            </div>
+
+        </div>
     </section>
     <footer class="footer">
-        <div>
-            <p>Curso de desarrollo web 2018  <img src="" alt=""> Logo platzi</p>
+
+        <div class="container">
+
+            <div>
+                <p>Curso de desarrollo web 2018 <img src="images/logo.jpg"  width=" 50px;" alt=""></p>
+            </div>
+            <div>
+                <p>Designed with <\3 by <a href="https://twitter.com/ey_marius" target="_blank" >ey_marius</a> </p>
+    
+            </div>
         </div>
-        <div>
-            <p>Designed with <\3 by  <a href=""></a> </p>
-           
-        </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
