@@ -321,9 +321,31 @@ figure{
         padding: 0 1em;
     }
 
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+
+    .hero__image {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h1 {
+        font-size: 2em;
+        z-index: 2;
+    }
+
 }
 
 @media screen and (max-width: 767px){
+   
     .header{
         /* border: 10px solid red; */
         display: block;
@@ -400,6 +422,10 @@ figure{
 
 
 @media screen and (max-width: 480px){
+
+     h1 {
+         font-size: 1.5em;
+     }
     .project__details{
        
         font-size: 12px;
@@ -431,4 +457,10 @@ figure{
 }
 
 @media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    .hero {
+        padding: 1em 1.2em;
+    }
 }
