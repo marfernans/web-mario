@@ -15,7 +15,7 @@
 
 <body>
 
-    <i class="icon-menu burger__button" ></i>
+    <i class="icon-menu burger__button" id='burger__menu'></i>
 
     <header class="header">
         <div class="container">
@@ -78,9 +78,6 @@
 
     <div class="container" <h2 class="event__list__title">Más sobre mi experiencia</h2>
     </div>
-
-
-
 
     <section id="eventos" class="event__list">
         <div class="container">
@@ -178,6 +175,42 @@
             </div>
         </div>
     </footer>
+    <script>
+        // console.log('Hola mundo es mi orimera linea js');
+
+
+        const ipad = window.matchMedia('screen and (max-width: 767px)')
+        // console.log(ipad);
+        const menu = document.querySelector('.menu');
+        // console.log(menu);
+        const burgerButton = document.querySelector('#burger__menu');
+        // console.log(burgerButton);
+
+
+        ipad.addListener(validation)
+
+        function validation(event) {
+
+            if (event.matches) {
+
+                burgerButton.addEventListener('click', hideShow)
+            }else{
+                burgerButton.removeEventListener('click', hideShow)
+
+            }
+
+            // console.log(event.matchs);
+        }
+
+        function hideShow() {
+            if (menu.classList.contains('is__active')) {
+                menu.classList.remove('is__active');
+            } else {
+                menu.classList.add('is__active');
+            }
+        }
+
+    </script>
 </body>
 
 </html>

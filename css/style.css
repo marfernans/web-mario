@@ -165,7 +165,7 @@ figure {
 }
 
 .header a {
-  color: white;
+  color: green;
   text-decoration: none;
 }
 .menu {
@@ -413,7 +413,7 @@ figure {
   }
   .menu{
       position: fixed;
-      background: rgba(0, 128, 0, .8);
+      background: rgba(0, 0, 0, .9);
       z-index: 3;
       top: 0;
       left: -100vw;
